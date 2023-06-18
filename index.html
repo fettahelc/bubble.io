@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Toy Store</title>
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--CSS file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/form.js"></script>
+    
+
+    <style>
+        #slider{
+            overflow: hidden;     
+
+     
+        }
+        #slider figure{
+            position: relative;
+            width:300%;
+            height:auto;
+            left:0;
+            animation: 18s slider infinite;
+            margin-top: 30px;
+            margin-bottom: 15rem;
+        }
+        #slider figure img{
+            width:20%;
+            float:left;
+            justify-content: space-around;
+            margin-left:10%;
+        }
+@keyframes slider {
+    0%{
+        left:-10%;
+    }
+    10%{
+        left:-10%;
+    }
+    
+    25%{
+        left: -100%;
+    }
+    
+    50% {
+        left:-190%;
+    }
+    
+    90%{
+        left:-10%;
+    }
+    100%{
+        left:-10%;
+    }
+}
+.line{
+    background: url(images/backgro.jpg);
+    margin-top:10px;
+    height:6px;
+}
+.header{
+    margin-top:4rem;
+}
+.header .indigo-text.text-darken-2{
+    color: #303f9f !important;
+    margin-top:10rem;
+    font-size: 2.5rem;
+    margin-left: 5rem;
+    font-weight: bolder;
+    margin-bottom: 9rem;
+    
+}
+
+
+.themes .box-container{
+    font-size: 6rem;
+    margin-left:15rem;
+    margin-top:4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    margin-top:8rem;
+}
+
+.themes .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0, .1);
+    position: relative;
+
+}
+.themes .box-container .box img{
+    height:25rem;
+    margin-bottom: 4rem;
+}
+.themes .box-container .box img:hover{
+    height:30rem;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!--Header Part Start-->
+
+    <header>
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="starWars.html">Star Wars</a></li>
+                <li><a href="barbie.html">Barbie</a></li>
+                <li><a href="toyStory.html">Toy Story</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="user.html">Login</a></li>
+                <li><a href="Calendar.html">Calendar</a></li>
+            </ul>
+            <button class="sidebarBtn" onclick="sidebar()">
+                <span></span>
+            </button>
+        </div>
+
+        <a href="index.html" class="logo"><span>.</span>bubble</a>
+        <nav class="navbar">
+            <a href="index.html">HOMEPAGE</a>
+            <a href="starWars.html">STAR WARS</a>
+            <a href="barbie.html">BARBIE</a>
+            <a href="toyStory.html">TOY STORY</a>
+        </nav>
+
+        <div class="icons">
+            <a href="game.html" class="fa-solid fa-gamepad"></a>
+            <a href="user.html" class="fa-solid fa-circle-user"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="Calendar.html" class="fa-solid fa-calendar-days"></a>
+
+        </div>
+
+
+    </header>
+    <!--Header part end-->
+
+    <!--HomePage start-->
+    <!--Slider start-->
+    <div class="line"></div>
+
+    <div id="slider">
+        <figure>
+            <img src="images/1.png" alt="">
+            <img src="images/2.png" alt="" style="margin-top: 10px;">
+            <img src="images/3.png" alt="" style="margin-top: 10px;">
+        </figure>
+    </div>
+    <!--Slider end-->
+
+    <!--Theme starts-->
+    <div class="line"></div>
+    <div class="header">
+            <span class="indigo-text text-darken-2">THEMES</span>
+    </div>
+    <section class="themes" id="themes">
+        
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/themes1.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/themes2.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/theme3.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/themes4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/theme55.JPG" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+
+    <!--Theme ends-->
+    <!--company info starts-->
+<section class="icons-container">
+    <div class="icons">
+        <img src="images/credit-card-regular.svg" alt="">
+        <div class="info">
+            <h3>Secure Payment</h3>
+            <span>protected by PayPal</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/gifts-solid.svg" alt="">
+        <div class="info">
+            <h3>Gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/truck-fast-solid.svg" alt="">
+        <div class="info">
+            <h3>Free Shipping</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/money-bill-solid.svg" alt="">
+        <div class="info">
+            <h3>7 Days Returns</h3>
+            <span>Guaranteed</span>
+        </div>
+    </div>
+    
+</section>
+<!--company info ends-->
+<!--
+    <section class="themes" id="themes">
+        <h1 class="heading">Most Sold</h1>
+        <div class="box-container">
+            
+        </div>
+    </section>
+-->
+    <!--HomePage end-->
+
+<!--Contact Section start-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us </h1>
+
+        <div class="row">
+            <form name="formValidation" id="formValidation" onsubmit="event.preventDefault(); messageSent()">
+                <div class="input-row">
+                    <input type="text" placeholder="Name" class="box" required>
+                </div>
+                <div class="input-row">
+                    <input type="email" placeholder="Email" class="box" required>
+                </div>
+                <div class="input-row">
+                    <input type="number" placeholder="Number" class="box" required>
+                </div>
+                <div class="input-row">
+                    <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+                </div>
+            <div class="text-center" >
+                <input type="submit" value="send message" class="btn">
+            </div>
+            </form>
+            <div id="sentMessage" style="display: none;">
+                <h2>Message sent succesfully!</h2>
+              </div>
+            <div class="image">
+                <img src="images/formfoto.jpg" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js" ></script>
+<!--Contact Section end-->
+
+
+
+<!--Footer section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">homepage</a>
+                <a href="starWars.html">star wars</a>
+                <a href="barbie.html">barbie</a>
+                <a href="toyStory.html">toy story</a>
+                <a href="game.html">game</a>
+                <a href="user.html">user login</a>
+                <a href="#">cart</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="index.html">homepage</a>
+                <a href="starWars.html">star wars</a>
+                <a href="barbie.html">barbie</a>
+                <a href="toyStory.html">toy story</a>
+                <a href="game.html">game</a>
+                <a href="user.html">user login</a>
+                <a href="cart.html">cart</a>
+            </div>
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">ankara</a>
+                <a href="#">istanbul</a>
+                <a href="#">antalya</a>
+                <a href="#">trabzon</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+90(0123)4567891</a>
+                <a href="#">bubble@info.com</a>
+            </div>
+        </div>
+    </section>
+
+
+<!--Footer section ends-->
+
+<!--Credit carts starts-->
+<section class="icons-containerr">
+    <div class="iconss">
+        <img src="images/axess.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/bonus.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/cardfinans.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/mastercard.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/maximum.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/verifiedbyvisa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/visa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/ssl.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/troy.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/paraf.svg" alt="">
+        <div class="info"></div>
+    </div>
+</section>
+<section class="footer">
+    <div class="credit"> created by Cemresu Uzun, Cihangir Efe Akpınar, Emre Özbaysal <span>.bubble ©2023</span> is one of the E.C.E Group brands | all rights are reserved</div>
+
+</section>
+
+
+
+
+<!--Credit carts ends-->
+
+
+
+
+</body>
+</html>

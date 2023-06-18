@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game</title>
+    <script src="js/game.js"></script>
+
+    <style>
+
+        body{
+            background-image: url("images/gameBack.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #first{
+            top:0;
+            width: 400px;
+            margin-left: 100px;
+            transition: top 0.2s ease-in-out;
+            position:relative;
+            margin-top: -150px;
+            margin-bottom: 100px;
+
+        }
+        div{
+            margin-top: 100px;
+        }
+        #second{
+            width: 50px;
+            margin-top: 75px;
+            position: relative;
+        }
+
+        #all{
+            display: flex;
+            width: 1000px;
+        }
+        #third{
+            width: 200px;
+            margin-left: 750px;
+        }
+        .darker {
+        filter: brightness(50%);
+        }
+
+        .hidden {
+        display: none;
+        }
+        #newDiv{
+            color: white;
+            font-size: 100px;
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        #press{
+            color:white;
+            background-color: black;
+            width:100px;
+            height:30px;
+        }
+
+    
+        
+    </style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    
+
+    <h1>Kill the enemy.</h1>
+    <div id="all">
+        <div>
+            <img id="first" src="images/klonSavasci.png" alt="">
+        </div>
+        <div>
+            <img id="second" src="images/fire.jpg" alt="">
+        </div>
+        <div>
+            <img id="third" src="images/droid.png" alt="">
+        </div>
+    </div>
+    
+    <input type="button" name="press" id="press" onclick="Game()">
+    
+    <div id="newDiv" class="hidden">
+        YOU WON!!
+    </div>
+    
+    <script>
+        var clickCount = 0;
+    
+        function Game() {
+            var secondImage = $("#second");
+            var initialPosition = secondImage.position();
+            var originalPosition = 0; // Set the original position here
+    
+            secondImage.animate(
+                {
+                    right: "-=800px"
+                },
+                1000,
+                function() {
+                    secondImage.addClass("darker");
+                    if (++clickCount === 3) {
+                        $("#third").hide();
+                        $("#newDiv").removeClass("hidden");
+                    }
+                    secondImage.animate(
+                        {
+                            right: originalPosition
+                        },
+                        1000,
+                        function() {
+                            secondImage.removeClass("darker");
+                        }
+                    );
+                }
+            );
+        }
+    </script>
+
+    
+    
+    
+
+</body>
+</html>

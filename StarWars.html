@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Products</title>
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="js/form.js"></script>
+    <!--CSS file link-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        <!--
+.panel-container 
+{ 
+    overflow: hidden; 
+    position: relative;
+    background-repeat: no-repeat;
+    height:310px;
+    width:auto;
+    margin-top:30px;
+    display: flex;
+}-->
+.panel-container 
+{ 
+    padding: 1rem 9%;
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+    height:450px;
+ 
+}
+.panel
+{ 
+    width: 850px; 
+    height: 450px; 
+    background-image: url(images/Lightsaber-Progress-Bar.gif);
+    background-repeat: no-repeat;
+    background-size: 850px 450px;
+    margin: 5px auto;
+}
+
+.products .heading{
+    margin-top:5rem;
+    margin-bottom: 5rem;
+    margin-left: 6rem;
+    font-size: 2rem;
+    color:#2d397e;
+}
+.products .heading span{
+    font-size: 3rem;
+    color:#60AFB2;
+}
+
+.products .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-right:7rem;
+    margin-left:7rem;
+
+}
+
+.products .box-container .box{
+    flex:1 1 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0, .1);
+    position: relative;
+    margin-bottom:5rem;
+
+}
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem;
+    left:1rem;
+    padding: .7rem 1 rem;
+    font-size: 2rem;
+    color:#60AFB2;
+    background: rgba(248, 217, 242, 0.1);
+    z-index:1;
+    border-radius: .5rem;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    width: 25rem;
+}
+
+.products .box-container .box .image img{
+    height:20rem;
+    margin-left: 3rem;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scal(1.1);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;
+    left:0;
+    right:0;
+    display:flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom:0;
+    
+}
+
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background: #60AFB2;
+    color: #fff;
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff;
+    border-right: .1rem solid #fff;
+    width:100%;
+
+}
+.products .box-container .box .image .icons a:hover{
+    background:#60AFB2;
+}
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+
+
+.products .box-container .box .content .price{
+    font-size: 2rem;
+    color:#60AFB2;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#2d397e;
+    font-weight: lighter;
+    text-decoration: line-through;    
+}
+.products .box-container .box .content h3{
+    font-size: 1.5rem;
+    color: #2d397e;
+    font-weight: lighter;
+}
+    </style>
+</head>
+<body>
+    <!--Header Part Start-->
+
+    <header>
+
+        <a href="index.html" class="logo"><span>.</span>bubble</a>
+        <nav class="navbar">
+            <a href="index.html">HOMEPAGE</a>
+            <a href="starWars.html">STAR WARS</a>
+            <a href="barbie.html">BARBIE</a>
+            <a href="toyStory.html">TOY STORY</a>
+        </nav>
+
+        <div class="icons">
+            <a href="game.html" class="fa-solid fa-gamepad"></a>
+            <a href="user.html" class="fa-solid fa-circle-user"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="Calendar.html" class="fa-solid fa-calendar-days"></a>
+
+
+        </div>
+    </header>
+    <!--Header part end-->
+    <div class="line"></div>
+    <!--Slider Part start-->
+    
+
+    <section class="panel-container">
+        <div class="panel"></div>
+    </section>
+
+    <!--Slider Part end-->
+    <!--Product part start-->
+    <section class="products" id="products">
+
+        <h1 class="heading">latest <span>products</span> </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy33.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Baby Yoda With Cookie</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy34.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Baby Yoda and Luke Skywalker</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy35.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cad Bane</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy36.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Baby Yoda</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy37.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Bobba Fett</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy38.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Wader With Pants</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy40.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Jabba</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy41.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Chewbakka</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy42.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Darth Wader</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy43.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Mandalore</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy44.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Stormtrooper</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy45.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>C-3PO</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy46.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Lovely Kylo Ren
+                        </h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy47.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Leia</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/toy48.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-cart-shopping"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Lovely R2D2</h3>
+                        <div class="price">549.99₺ <span>615.99₺</span> </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Product part end-->
+    <!--company info starts-->
+<section class="icons-container">
+    <div class="icons">
+        <img src="images/credit-card-regular.svg" alt="">
+        <div class="info">
+            <h3>Secure Payment</h3>
+            <span>protected by PayPal</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/gifts-solid.svg" alt="">
+        <div class="info">
+            <h3>Gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/truck-fast-solid.svg" alt="">
+        <div class="info">
+            <h3>Free Shipping</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/money-bill-solid.svg" alt="">
+        <div class="info">
+            <h3>7 Days Returns</h3>
+            <span>Guaranteed</span>
+        </div>
+    </div>
+</section>
+<!--company info ends-->
+<!--
+    <section class="themes" id="themes">
+        <h1 class="heading">Most Sold</h1>
+        <div class="box-container">
+            
+        </div>
+    </section>
+-->
+    <!--HomePage end-->
+
+<!--Contact Section start-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us </h1>
+        <div class="row">
+            <form name="formValidation" id="formValidation" onsubmit="event.preventDefault(); messageSent()">
+                <div class="input-row">
+                    <input type="text" placeholder="Name" class="box" required>
+                </div>
+                <div class="input-row">
+                    <input type="email" placeholder="Email" class="box" required>
+                </div>
+                <div class="input-row">
+                    <input type="number" placeholder="Number" class="box" required>
+                </div>
+                <div class="input-row">
+                    <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+                </div>
+            <div class="text-center" >
+                <input type="submit" value="send message" class="btn">
+            </div>
+            </form>
+            <div id="sentMessage" style="display: none;">
+                <h2>Message sent succesfully!</h2>
+              </div>
+            <div class="image">
+                <img src="images/formfoto.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+<!--Contact Section end-->
+
+
+
+<!--Footer section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">homepage</a>
+                <a href="starWars.html">star wars</a>
+                <a href="barbie.html">barbie</a>
+                <a href="toyStory.html">toy story</a>
+                <a href="game.html">game</a>
+                <a href="user.html">user login</a>
+                <a href="#">cart</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="index.html">homepage</a>
+                <a href="starWars.html">star wars</a>
+                <a href="barbie.html">barbie</a>
+                <a href="toyStory.html">toy story</a>
+                <a href="game.html">game</a>
+                <a href="user.html">user login</a>
+                <a href="#">cart</a>
+            </div>
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">ankara</a>
+                <a href="#">istanbul</a>
+                <a href="#">antalya</a>
+                <a href="#">trabzon</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+90(0123)4567891</a>
+                <a href="#">bubble@info.com</a>
+            </div>
+        </div>
+    </section>
+
+
+<!--Footer section ends-->
+
+<!--Credit carts starts-->
+<section class="icons-containerr">
+    <div class="iconss">
+        <img src="images/axess.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/bonus.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/cardfinans.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/mastercard.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/maximum.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/verifiedbyvisa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/visa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/ssl.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/troy.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/paraf.svg" alt="">
+        <div class="info"></div>
+    </div>
+</section>
+<section class="footer">
+    <div class="credit"> created by Cemresu Uzun, Cihangir Efe Akpınar, Emre Özbaysal <span>.bubble ©2023</span> is one of the E.C.E Group brands | all rights are reserved</div>
+
+</section>
+
+    
+</body>
+</html>

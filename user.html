@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Toy Store</title>
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!--CSS file link-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/user.js" ></script>
+    <style>
+
+.line{
+    background: url(images/backgro.jpg);
+    margin-top:10px;
+    height:6px;
+}
+.header{
+    margin-top:4rem;
+}
+.header{
+    
+    margin-top:10rem;
+    font-size: 2.5rem;
+    margin-left: 5rem;
+    font-weight: bolder;
+    margin-bottom: 9rem;
+    
+}
+.all{
+    width:800px;
+    height:800px;
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:-45px;
+    margin-bottom:-40px;
+}
+
+.backpic img{
+    max-width:800px;
+    max-height: 800px;
+    
+}
+/*
+ .all{
+    background: url(images/loginpic.png);
+    height:500px;
+    background-repeat: no-repeat;
+    max-width:100%;
+    max-height:100%;
+ }
+*/
+ .form-container {
+    max-width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: #4b979a;
+    border-radius: 5px;
+    margin-left:15rem;
+    margin-bottom:5rem;
+  }
+
+  .form-container h2{
+    font-size: 3rem;
+    color:white;
+    font-weight: light;
+    margin-bottom: 2rem;
+  }
+
+
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+
+  .form-container input[type="submit"] {
+    background-color: #25597e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left:39rem;
+  }
+  
+  #welcomeMessage h2{
+    font-size:3rem;
+    display: flex;
+    position: relative;
+    margin-top:10rem;
+  }
+  #welcomeMessage h2 span{
+
+    font-size: 3rem;
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <!--Header Part Start-->
+
+    <header>
+
+        <a href="index.html" class="logo"><span>.</span>bubble</a>
+        <nav class="navbar">
+            <a href="index.html">HOMEPAGE</a>
+            <a href="starWars.html">STAR WARS</a>
+            <a href="barbie.html">BARBIE</a>
+            <a href="toyStory.html">TOY STORY</a>
+        </nav>
+
+        <div class="icons">
+            <a href="game.html" class="fa-solid fa-gamepad"></a>
+            <a href="user.html" class="fa-solid fa-circle-user"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="Calendar.html" class="fa-solid fa-calendar-days"></a>
+
+        </div>
+
+
+    </header>
+    <!--Header part end-->
+
+    <!--HomePage start-->
+    
+    <div class="all">
+
+        <div class="backpic">
+            <img src="images/loginpic.png" alt=""> 
+        </div>
+
+        
+          <div class="form-container">
+            
+              
+
+              <form id="loginForm" onsubmit="event.preventDefault(); displayWelcomeMessage()">
+                <h2>Login</h2> <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <input type="submit" value="Login">
+              </form>
+        
+              <div id="welcomeMessage" style="display: none;">
+                <h2>Welcome,&nbsp<span id="userName"></span>&nbsp:)</h2>
+              </div>
+            </div>
+      </div>
+
+
+
+    
+
+
+
+<!--Footer section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">homepage</a>
+                <a href="starWars.html">star wars</a>
+                <a href="barbie.html">barbie</a>
+                <a href="toyStory.html">toy story</a>
+                <a href="game.html">game</a>
+                <a href="#">user login</a>
+                <a href="#">cart</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">homepage</a>
+                <a href="#">star wars</a>
+                <a href="#">barbie</a>
+                <a href="#">toy story</a>
+                <a href="#">game</a>
+                <a href="#">user login</a>
+                <a href="#">cart</a>
+            </div>
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">ankara</a>
+                <a href="#">istanbul</a>
+                <a href="#">antalya</a>
+                <a href="#">trabzon</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+90(0123)4567891</a>
+                <a href="#">bubble@info.com</a>
+            </div>
+        </div>
+    </section>
+
+
+<!--Footer section ends-->
+
+<!--Credit carts starts-->
+<section class="icons-containerr">
+    <div class="iconss">
+        <img src="images/axess.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/bonus.svg" alt="">
+        <div class="info"></div>
+    </div>
+
+    <div class="iconss">
+        <img src="images/cardfinans.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/mastercard.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/maximum.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/verifiedbyvisa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/visa.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/ssl.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/troy.svg" alt="">
+        <div class="info"></div>
+    </div>
+    <div class="iconss">
+        <img src="images/paraf.svg" alt="">
+        <div class="info"></div>
+    </div>
+</section>
+<section class="footer">
+    <div class="credit"> created by Cemresu Uzun, Cihangir Efe Akpınar, Emre Özbaysal <span>.bubble ©2023</span> is one of the E.C.E Group brands | all rights are reserved</div>
+
+</section>
+
+
+
+
+<!--Credit carts ends-->
+
+
+
+
+</body>
+</html>

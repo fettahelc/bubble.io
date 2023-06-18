@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Cart Page</title>
+
+<script src="js/Cart.js"></script>
+
+
+
+<style>
+    body{
+        background-image: url(images/barbieBackground.jpeg);
+    }
+    table{
+        background-color:rgb(77, 148, 206);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        margin-top: 300px;
+        width: 300px;
+    }
+    textarea{
+        height: 19px;
+        width: 165px;
+    }
+    div{
+        text-align: center;
+    }
+    #myDiv{
+        
+        font-size: 340px;
+    }
+    #inp2{
+        text-align: center;
+    }
+   
+</style>
+</head>
+<body>
+
+    
+    <form action="" name="all" id="all">
+        <table>
+            <tr>
+                <td><input type="button" value="See Total" onclick="numgenerator()"></td>
+                <td id="inp1"><textarea name="" id="display" cols="30" rows="10" name="display"></textarea></td>
+            </tr>
+            <tr>
+                <td>Card Number:</td>
+                <td><input type="text" name="cardnum"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="passw"></td>
+            </tr>
+            <tr>
+                <td id="inp2" colspan="2"><input type="button" value="Proceed" onclick="closes()"></td>
+            </tr>
+            
+        </table>
+    </form>
+    <div>
+        <div id="myDiv" style="display: none;" class="indigo-text text-darken-2">HAVE FUN!</div>
+
+    </div>
+
+
+</body>
+
+</html>

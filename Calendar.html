@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            outline:none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+            
+            scroll-behavior: smooth;
+            scroll-padding-top: 6rem;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+        header{
+            top:0;
+            left:0;
+            right:0;
+            background: white;
+            padding: 2rem 9%;
+            position: flex;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+            
+        }
+        header .logo {
+            font-size: 2.5rem;
+            color: #60AFB2;
+            font-weight: bolder;
+            text-transform: lowercase;
+            margin-left: 0cm;
+        }
+        
+        header .logo span {
+            color: #357b7e;
+        }
+        
+        header .navbar a {
+            font-size: 1rem;
+            padding: 0 1.5rem;
+            color:#2d397e;
+            font-weight: bold;
+            margin-right:1cm;
+        }
+        
+        header .navbar a:hover{
+            color:#60AFB2;
+        }
+        header .icons{
+            margin-right: -1cm;
+        }
+        
+        .calendar{
+            font-size: 1rem;
+            margin: 7rem 7rem;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>.</span>bubble</a>
+        <nav class="navbar">
+            <a href="index.html">HOMEPAGE</a>
+            <a href="starWars.html">STAR WARS</a>
+            <a href="barbie.html">BARBIE</a>
+            <a href="toyStory.html">TOY STORY</a>
+        </nav>
+
+        <div class="icons">
+            <a href="game.html" class="fa-solid fa-gamepad"></a>
+            <a href="user.html" class="fa-solid fa-circle-user"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <a href="Calendar.html" class="fa-solid fa-calendar-days"></a>
+
+        </div>
+
+
+    </header>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<section class="calendar">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="js/Calendar.js" ></script>
+    <div id="calendar"></div>
+</section>
+</body>
+</html>
